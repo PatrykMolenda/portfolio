@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patryk Molenda | Portfolio</title>
+    <link rel="icon" href="assets/img/profile.png" type="image/x-icon" />
+    <script src="dist/build.min.js"></script>
+    <link rel="stylesheet" href="dist/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://patrykmolenda.pl/" />
+    <meta property="og:title" content="Patryk Molenda | Portfolio" />
+    <meta property="og:description" content="Web portoflio of Patryk Molenda" />
+    <meta
+      property="og:image"
+      content="https://patrykmolenda.pl/assets/img/banner.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://patrykmolenda.pl/" />
+    <meta property="twitter:title" content="Patryk Molenda | Portfolio" />
+    <meta
+      property="twitter:description"
+      content="Web portoflio of Patryk Molenda"
+    />
+    <meta
+      property="twitter:image"
+      content="https://patrykmolenda.pl/assets/img/banner.png"
+    />
+  </head>
+  <body
+    class="bg-dark w-screen h-screen px-120 py-30 text-white overflow-x-hidden overflow-y-auto select-none"
+  >
+    <i class="fa-regular fa-globe text-8xl mb-8"></i>
+    <h1 class="text-5xl font-bold uppercase">Patryk Molenda</h1>
+    <div class="w-full h-min flex flex-row justify-between items-start mt-8">
+      <div id="left" class="w-3/5 mr-8">
+        <p class="text-2xl mt-4">DevOps & Security Engineer</p>
+        <p class="text-lg my-4">
+          I design, implement, and secure IT infrastructures on a daily basis.
+          Combining knowledge of automation, infrastructure management, and
+          security, I build reliable, scalable, and attack-resistant systems.
+        </p>
+        <p class="text-lg mt-4">
+          I specialize in server administration, CI/CD configuration, and
+          application monitoring. In every project, I focus on stability,
+          simplicity, and effective solutions tailored to real business needs.
+        </p>
+      </div>
+      <div id="right" class="w-2/5 flex flex-col items-end">
+        <img
+          src="assets/img/profile.png"
+          alt="Patryk Molenda"
+          class="rounded-sm mb-4 h-min"
+        />
+      </div>
+    </div>
+    <hr class="border-hr my-8" />
+    <div class="flex justify-between flex-row items-center py-8">
+      <div class="w-1/3">
+        <h1 class="text-5xl font-semibold mb-4" id="counter1">3+</h1>
+        <p>Years of Experience</p>
+      </div>
+      <div class="w-1/3">
+        <h1 class="text-5xl font-semibold mb-4" id="counter2">35+</h1>
+        <p>Projects Completed</p>
+      </div>
+      <div class="w-1/3">
+        <h1 class="text-5xl font-semibold mb-4" id="counter3">20+</h1>
+        <p>Satisfied Clients</p>
+      </div>
+    </div>
+    <hr class="border-hr my-8" />
+    <p class="text-2xl">Skills</p>
+    <div id="tabs" class="border-b border-[#222222] my-4 flex flex-row">
+      <div
+        class="flex flex-row items-center px-2.5 py-1 hover:bg-slate-200 hover:text-dark cursor-pointer w-min active-tab"
+      >
+        <i class="fa-solid fa-briefcase mr-2"></i>
+        Programming
+      </div>
+      <div
+        class="flex flex-row items-center px-2.5 py-1 hover:bg-slate-200 hover:text-dark cursor-pointer w-min"
+      >
+        <i class="fa-solid fa-browser mr-2"></i>
+        Software
+      </div>
+      <div
+        class="flex flex-row items-center px-2.5 py-1 hover:bg-slate-200 hover:text-dark cursor-pointer w-min"
+      >
+        <i class="fa-solid fa-user mr-2"></i>
+        Languages
+      </div>
+    </div>
+    <div id="software" class="grid grid-cols-3 gap-4 hidden">
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-brands fa-docker text-lg mr-2"></i>
+        <p class="text-lg">Docker</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-brands fa-linux text-lg mr-2"></i>
+        <p class="text-lg">Linux</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-brands fa-cloudflare text-lg mr-2"></i>
+        <p class="text-lg">Cloudflare</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-brands fa-aws text-lg mr-2"></i>
+        <p class="text-lg">AWS</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-brands fa-github text-lg mr-2"></i>
+        <p class="text-lg">GitHub</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-brands fa-stripe text-lg mr-2"></i>
+        <p class="text-lg">Stripe</p>
+      </div>
+    </div>
+    <div id="languages" class="grid grid-cols-3 gap-4 hidden">
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-regular fa-pot-food text-lg mr-2"></i>
+        <p class="text-lg">Polski</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-regular fa-clock text-lg mr-2"></i>
+        <p class="text-lg">English</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-regular fa-cloud text-lg mr-2"></i>
+        <p class="text-lg">Deutsch</p>
+      </div>
+    </div>
+    <div id="programming" class="grid grid-cols-3 gap-4">
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-solid fa-scroll text-lg mr-2"></i>
+        <p class="text-lg">Lua</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-brands fa-php text-lg mr-2"></i>
+        <p class="text-lg">PHP</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-brands fa-js text-lg mr-2"></i>
+        <p class="text-lg">Javascript</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-brands fa-js text-lg mr-2"></i>
+        <p class="text-lg">Typescript</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-brands fa-css text-lg mr-2"></i>
+        <p class="text-lg">TailwindCSS</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-brands fa-node text-lg mr-2"></i>
+        <p class="text-lg">NodeJS</p>
+      </div>
+      <div class="bg-card rounded-sm px-3 py-1.5 flex flex-row items-center">
+        <i class="fa-brands fa-symfony text-lg mr-2"></i>
+        <p class="text-lg">Symfony</p>
+      </div>
+    </div>
+    <hr class="border-hr my-8" />
+    <p class="text-2xl">Technologies</p>
+    <span class="my-2">Technologies I used to work with</span>
+    <div
+      class="flex flex-row w-full px-10 py-10 items-center justify-center gap-16 flex-wrap"
+    >
+      <img
+        src="assets/img/companies/company1.png"
+        alt="Brand 1"
+        class="rounded-sm"
+      />
+      <img
+        src="assets/img/companies/company2.png"
+        alt="Brand 2"
+        class="rounded-sm"
+      />
+      <img
+        src="assets/img/companies/company3.png"
+        alt="Brand 3"
+        class="rounded-sm"
+      />
+      <img
+        src="assets/img/companies/company4.png"
+        alt="Brand 4"
+        class="rounded-sm"
+      />
+    </div>
+    <hr class="border-hr my-8" />
+    <p class="text-2xl">Contact</p>
+    <div id="contact" class="flex flex-row justify-between w-full my-4">
+      <div id="left" class="flex-col w-full mr-8 space-y-4">
+        <div class="border border-hr px-5 py-4 flex flex-row items-center">
+          <i class="fa-solid fa-location-dot mr-2"></i>
+          <a id="address">Częstochowa, Poland</a>
+        </div>
+        <div class="border border-hr px-5 py-4 flex flex-row items-center">
+          <i class="fa-solid fa-phone-volume mr-2"></i>
+          <a id="phone"></a>
+        </div>
+      </div>
+      <div id="right" class="flex-col w-full ml-4 space-y-4 justify-end">
+        <div
+          class="border border-hr px-5 py-4 flex flex-row items-center cursor-pointer"
+          onclick="window.open('https://patrykmolenda.pl', '_blank')"
+        >
+          <i class="fa-solid fa-browser mr-2"></i>
+          patrykmolenda.pl
+        </div>
+        <div
+          id="email-box"
+          class="border border-hr px-5 py-4 flex flex-row items-center cursor-pointer"
+          onclick="window.open('mailto:kontakt@patrykmolenda.pl')"
+        >
+          <i class="fa-solid fa-envelope mr-2"></i>
+          <a id="email"></a>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="pb-4">
+      <p class="text-center mt-8">
+        © <a id="year"></a> Patryk Molenda. All rights reserved.
+      </p>
+      <p class="text-center cursor-pointer hover:text-amber-300 transition-all ease-in-out" id="key">
+        Click here to copy my PGP Public Key
+      </p>
+    </div>
+  </body>
+</html>

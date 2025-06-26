@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Web portfolio of Patryk Molenda",
+  "main": "bundle.js",
+  "scripts": {
+      "build": "node bundle.js && npx @tailwindcss/cli -i ./src/css/main.css -o ./dist/style.min.css"
+  },
+  "devDependencies": {
+      "@tailwindcss/cli": "^4.1.10",
+      "inversify": "^7.5.4",
+      "tailwindcss": "^4.1.10",
+      "javascript-obfuscator": "^4.1.1",
+      "terser": "^5.43.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrykMolenda/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "tailwindcss"
+  ],
+  "author": "PatrykMolenda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PatrykMolenda/portfolio/issues"
+  },
+  "homepage": "https://github.com/PatrykMolenda/portfolio#readme"
+}

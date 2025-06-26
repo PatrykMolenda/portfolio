@@ -1,0 +1,30 @@
+@import "tailwindcss";
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0c0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #191919;
+}
+
+@theme {
+  --color-dark: #191919;
+  --color-white: #d3d3d3;
+  --color-hr: #222222;
+  --color-card: #262626;
+}
+
+.active-tab {
+  @apply border-b border-white bg-slate-200 text-dark;
+}
