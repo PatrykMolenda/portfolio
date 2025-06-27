@@ -1,4 +1,4 @@
-let hideEmail = function (email) {
+const hideEmail = function (email) {
   return email.replace(/(.{2})(.*)(?=@)/, function (gp1, gp2, gp3) {
     for (let i = 0; i < gp3.length; i++) {
       gp2 += "*";
@@ -7,7 +7,11 @@ let hideEmail = function (email) {
   });
 };
 
-let hidePhoneNumber = function (number) {
+const isMobileDevice = () => {
+  return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+const hidePhoneNumber = function (number) {
   let clean = number.replace(/\D/g, "");
   if (clean.length < 5) return number;
   let prefix = clean.slice(0, 3);
@@ -60,9 +64,9 @@ window.onload = () => {
       tabs.forEach((t) => t.classList.remove("active-tab"));
       tab.classList.add("active-tab");
       const activeTab = tab.textContent.trim().toLowerCase();
-      if (programming) programming.style.display = activeTab === "programming" ? "grid" : "none";
-      if (software) software.style.display = activeTab === "software" ? "grid" : "none";
-      if (languages) languages.style.display = activeTab === "languages" ? "grid" : "none";
+      if (programming) programming.style.display = activeTab === "programming" ? "flex" : "none";
+      if (software) software.style.display = activeTab === "software" ? "flex" : "none";
+      if (languages) languages.style.display = activeTab === "languages" ? "flex" : "none";
     });
   });
 
@@ -86,6 +90,12 @@ window.onload = () => {
       emailElement.innerText = hideEmail(funny);
       emailElement.href = "mailto:*";
     };
+    if(isMobileDevice()) {
+      setTimeout(() => {
+        emailElement.innerText = funny;
+        emailElement.href = "mailto:" + funny;
+      }, Math.random() * 100)
+    }
   }
 
   base1 = "Nzg2ID";
@@ -103,6 +113,12 @@ window.onload = () => {
       phoneElement.innerText = "+48 " + hidePhoneNumber(funny2);
       phoneElement.href = "tel:*";
     };
+      if(isMobileDevice()) {
+        setTimeout(() => {
+          phoneElement.innerText = "+48 " + funny2;
+          phoneElement.href = "tel:" + funny2;
+        }, Math.random() * 100)
+      }
   }
 
   let matrixDirection = 1;
@@ -122,7 +138,7 @@ window.onload = () => {
       loopMatrix();
     }, 2500);
   }
-  loopMatrix();
+  if(!isMobileDevice()) loopMatrix();
 
   const counter1 = document.getElementById("counter1");
   const counter1Value = 3;

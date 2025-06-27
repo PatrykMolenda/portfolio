@@ -28,3 +28,7 @@ body {
 .active-tab {
   @apply border-b border-white bg-slate-200 text-dark;
 }
+
+.card {
+  @apply bg-card rounded-sm px-3 py-1.5 flex flex-row items-center my-2
+}
